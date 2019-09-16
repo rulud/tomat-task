@@ -5,9 +5,9 @@ import {
     STATE_FINISH
 } from './states';
 
-const TASK_SECONDS = 25;
-const PAUSE_SECONDS = 5;
-const BIG_PAUSE_SECONDS = 30;
+const TASK_SECONDS = 25 * 60;
+const PAUSE_SECONDS = 5 * 60;
+const BIG_PAUSE_SECONDS = 30 * 60;
 
 
 export const actions = {
@@ -20,7 +20,7 @@ export const actions = {
                 nextNumber = v.processInfo.limitTask;
             }
 
-            v.processInfo.numberTaskProcess = nextNumber; // +1 ������ ���������
+            v.processInfo.numberTaskProcess = nextNumber; // +1
         }
         v.processInfo.counter++;
     },
