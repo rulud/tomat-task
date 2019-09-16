@@ -29,7 +29,6 @@ import {TaskCreatorService} from './task-creator.service';
             <div class="btn btn-success" routerLink="/execution">Готово</div>
         </div>
     `,
-    styleUrls: ['./task-creator.component.css']
 })
 export class TaskCreatorComponent implements OnInit {
 
